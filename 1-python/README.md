@@ -21,3 +21,19 @@ estudiantes = [
 ```python
 texto = "Python es genial ! Python es fácil de aprender y Python es muy usado"
 ```
+
+**6.** Crea una función `crear_perfil(nombre, edad, altura, es_estudiante)` que reciba los datos de una persona y retorne un string formateado con toda la información usando `f-strings`.
+
+**7.** Crea una función que retorne un diccionario con: una lista limpia de nombres (sin espacios extra, primera letra mayúscula). Y, además debe retornar cuenta cuántos elementos tienen más de una palabra. Utiliza la variable `nombres`:
+```python
+nombres = ["ana maría", "CARLOS PÉREZ", "  luis  ", "María José"]
+
+# Ejemplo de retorno
+{ 
+  'nombres_limpios': ['Ana maría', 'Carlos pérez', 'Luis', 'María josé'], 
+  'multiples_palabras': 4
+}
+```
+Pista: Puedes utilizar los métodos `strip()`, `rstrip()` o `lstrip()`
+
+**8.** Crea una función llamada `filtrar_numeros(lista_numeros)` que reciba una lista de números del 1 al 20 y retorne tres listas: números pares, cuadrados de números impares, y números divisibles por 3.
