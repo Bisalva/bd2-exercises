@@ -39,7 +39,7 @@ nombres = ["ana maría", "CARLOS PÉREZ", "  luis  ", "María José"]
 # Ejemplo de retorno
 { 
   'nombres_limpios': ['Ana maría', 'Carlos pérez', 'Luis', 'María josé'], 
-  'multiples_palabras': 4
+  'multiples_palabras': 3
 }
 ```
 Pista: Puedes utilizar los métodos `strip()`, `rstrip()` o `lstrip()`
