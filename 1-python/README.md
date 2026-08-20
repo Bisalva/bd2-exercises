@@ -46,7 +46,7 @@ Pista: Puedes utilizar los métodos `strip()`, `rstrip()` o `lstrip()`
 
 **9.** Crea una función llamada `filtrar_numeros(lista_numeros)` que reciba una lista de números del 1 al 20 y retorne tres listas: números pares, cuadrados de números impares, y números divisibles por 3. Realiza dos implementaciones: una usando ciclos y otra usando comprensión de listas.
 
-# Ejercicios trabajo autónomo
+# Ejercicios de trabajo autónomo
 
 **1.** Crea una función `evaluar_nota(nota)` que reciba una nota entre 1.0 y 7.0 y retorne si está "Aprobado", "Reprobado", o "Aprobado con distinción" (reprobado < 4.0, aprobado >= 4.0, aprobado con distinción >= 6.0 ).
 
@@ -55,6 +55,7 @@ Pista: Puedes utilizar los métodos `strip()`, `rstrip()` o `lstrip()`
 **3.** Crea una función `contar_hasta(limite, parar_en)` que imprima números del 1 hasta `limite`, pero se detenga si encuentra el número `parar_en`.
 
 **4.** Crea funciones para manejar una lista de frutas: `obtener_primera_y_ultima(frutas)`, `agregar_fruta(frutas, nueva_fruta)`, y `mostrar_frutas(frutas)` que muestren toda la lista.
+
 **5.** Crea una función `crear_libro(titulo, autor, año, paginas)` que retorne un diccionario con la información del libro, y otra función `mostrar_libro(libro)` que imprima la información de forma ordenada.
  
 **6.** Crea una función `calcular_total_compra(lista_compras)` que reciba una lista de productos con precios y retorne el costo total. También crea `agregar_producto(lista, nombre, precio)` para agregar productos a la lista.
