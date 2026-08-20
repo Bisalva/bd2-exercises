@@ -143,8 +143,49 @@ print(f"Cantidad de aprobados: {cantidad_estudiantes_aprobados}\nPromedio:{prome
 
 
 ## 4. Implementa el ejercicio anterior utilizando comprensión de listas.
+### imprimir nombre del estudiante , estado
+resultados = [f"Nombre: {estudiante['nombre']}, nota {estudiante['nota']} (Aprobado)"
+              if estudiante["nota"] >=4.0
+              else 
+              f"Nombre: {estudiante['nombre']}, nota {estudiante['nota']} (Reprobado)"
+              for estudiante in estudiantes]
+resultados = [f"Nombre: {estudiante['nombre']}, nota {estudiante['nota']}  {'Aprobado' if estudiante['nota']>=4.0 else 'Reprobado'}" 
+              for estudiante in estudiantes]
 
-## 5. Utilizando la variable mensaje, crea un diccionario que almacene la cantidad de veces que aparece cada palabra. 
+for resultado in resultados:
+    print(resultado)
+### calcular el promedio
+# sum(promedio)
+promedio = sum([estudiante["nota"] for estudiante in estudiantes]) / len(estudiantes)
+# print(promedio)
+
+### Indicar la cantidad de estudiantes aprobados
+aprobados = [estudiante for estudiante in estudiantes if estudiante["nota"]>= 4.0]
+# print(f"La cantidad de estudiantes aprobados es {len(aprobados)}")
+
+
+## 5. Utilizando la variable mensaje, crea un diccionario que almacene 
+## la cantidad de veces que aparece cada palabra. 
 ## Luego, imprime cada palabra junto con su número de apariciones. 
 ## Antes de comenzar, asegúrate de convertir todas las letras del mensaje a minúsculas.
-texto = "Python es genial ! Python es fácil de aprender y Python es muy usado"
+texto = "Python es genial ! python es fácil de aprender y PYTHON es muy usado"
+
+palabras = texto.lower().split(" ")
+print(palabras)
+conteo = {}
+# {"python": 1}
+# {"python":1 , "es":1}
+# {"python": 2}
+for palabra in palabras:
+    #print(conteo)
+    # opción 1
+    if palabra in conteo:
+        conteo[palabra] = conteo[palabra]+1 
+        # conteo[palabra] += 1
+    else:
+        conteo[palabra] = 1
+    # opción 2:
+    # conteo[palabra] = conteo["palabra"].get(palabra,0) +1
+print(conteo)
+for palabra,cantidad in conteo.items():
+    print(f"{palabra} aparece {cantidad} veces")
